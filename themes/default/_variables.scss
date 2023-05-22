@@ -28,10 +28,9 @@ $default-font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
 // Colors
 //
 
-$color-primary: #c6e3fa !default;
-$color-primary-light: #f6fbff !default;
-$color-primary-dark: #6ea9d7 !default;
-$color-primary-dark: #6EAAD8 !default;
+$color-primary: #f0f2f5 !default;
+$color-primary-light: #f0f2f5 !default;
+$color-primary-dark: #848484 !default;
 
 $color-secondary: #91ECEC !default;
 $color-secondary-light: #C2F9F9 !default;
@@ -41,8 +40,8 @@ $color-secondary-dark: #64D3D3 !default;
 // http://marcodiiga.github.io/rgba-to-rgb-conversion
 // Hex values are calculated based on white background 
 // If you change background color rgb color will change, that is why its better to use rgba with opacity!
-$color-text: rgba(0, 0, 0, .87) !default; // #212121
-$color-text-medium: rgba(0, 0, 0, .60) !default; // #666666
+$color-text: #2e3f5c !default; // #212121
+$color-text-medium: #394f75 !default; // #666666
 $color-text-disabled: rgba(0, 0, 0, .38) !default; // #9e9e9e
 $color-text-inverted: invert($color-text); 
 
@@ -68,7 +67,7 @@ $color-focus: $color-text !default;
 $color-bg-focus: rgba-to-rgb(rgba($color-primary-dark, 0.24), $color-primary-light) !default;
 $color-selected: darken($color-primary-dark, 25%) !default;
 $color-bg-selected: $color-bg-focus !default;
-$color-activated: darken($color-primary-dark, 25%)  !default;
+$color-activated: $color-text, 25%  !default;
 $color-bg-activated: $color-bg-focus !default;
 $color-active: $color-primary-dark !default;
 $color-bg-active: $color-bg-activated !default;
@@ -125,7 +124,7 @@ $button-border: solid 1px $default-border-color !default;
 $button-border-radius: $default-border-radius !default;
 
 // Colors
-$button-color: $color-primary-dark !default;
+$button-color: #545454 !default;
 $button-bg-color: transparent !default;
 
 // Fonts
@@ -228,7 +227,7 @@ $conversation-bg-color: $default-bg-color !default;
 $conversation-unread-color: $color-white !default;
 $conversation-unread-bg-color: $color-danger !default;
 $conversation-hover-bg-color: $color-bg-hover !default;
-$conversation-unread-dot-color: #2e63e8 !default;
+$conversation-unread-dot-color: #565656 !default;
 $conversation-name-color: $color-text !default;
 $conversation-name-activated-color: $color-activated !default;
 $conversation-info-color: $color-text-medium !default;
@@ -662,7 +661,7 @@ $message-list-loading-more-bg-color: $color-white !default;
 $message-list-loading-more-height: 1.2em !default;
 
 // Spacing
-$message-list-scroll-wrapper-padding: 0 1.2em 0 0.8em !default;
+$message-list-scroll-wrapper-padding: 0 0 0 0 !default;
 $message-list-loading-more-padding: 2px 0 !default;
 $message-list-message-separator-margin-top: 1.2em !default;
 
