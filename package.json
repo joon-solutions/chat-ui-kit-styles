@@ -50,11 +50,6 @@
     "pack": "yarn pack",
     "watch": "chokidar 'themes/**/*.scss' -c 'npm-run-all -s build:sass build:autoprefixer'"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "files": [
     "dist",
     "scripts",
@@ -65,23 +60,6 @@
   },
   "release": {
     "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "angular",
-          "releaseRules": [
-            {
-              "type": "docs",
-              "scope": "readme",
-              "release": "patch"
-            },
-            {
-              "scope": "no-release",
-              "release": false
-            }
-          ]
-        }
-      ],
       "@semantic-release/release-notes-generator",
       [
         "@semantic-release/changelog",
